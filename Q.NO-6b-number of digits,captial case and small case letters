@@ -1,0 +1,14 @@
+str=input('enter string')
+digits=0
+capitalCase=0
+smallCase=0
+for i in str:
+	if(i.isdigit()):
+	   digits=digits+1
+	elif(i.isupper()):
+	    capitalCase=capitalCase+1
+	elif(i.islower()):
+	    smallCase=smallCase+1
+print("number of digits in string:",digits)
+print("number of capitalCase:",capitalCase)
+print("number of smallCase:",smallCase)
