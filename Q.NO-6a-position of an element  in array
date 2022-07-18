@@ -1,0 +1,12 @@
+from numpy import *
+a=array([10,20,30,40,50])
+flag=0
+print(a)
+ele=int(input("enter element whose position you want to search:"))
+for i in range(len(a)):
+	if(a[i]==ele):
+		print("element found in position",i+1)
+		flag=1
+		break
+if(flag ==0):
+		print("element not found")
